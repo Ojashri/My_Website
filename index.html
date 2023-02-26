@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <!-- Link To CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Box Icons -->
+    <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <a href="#" class="logo">My Website</a>
+ 
+        <div class="bx bx-menu" id="menu-icon"></div>
+ 
+        <ul class="navbar">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#mystory">My Story</a></li>
+            <!-- <li><a href="#achievements">Achievements</a></li> -->
+            <li><a href="#mypage">My Page</a></li>
+            <div class="bx bx-moon" id="darkmode"></div>
+        </ul>
+    </header>
+    <!-- Home -->
+ 
+    <section class="home" id="home">
+        <div class="social">
+            <a href="#"><i class='bx bxl-github'></i></a>
+            <a href="#"><i class='bx bxl-linkedin' ></i></a>
+            <a href="#"><i class='bx bxl-instagram' ></i></a>
+        </div>
+        <div class="home-img">
+            <img src="data:image/jpeg;base64,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" alt="">
+        </div>
+        <div class="home-text">
+            <span>Hello, I'm</span>
+            <h1>Ojashri</h1>
+            <h2>Artist</h2>
+            <p>I am an engineering student who is trying to follow her dreams, doing something which she loves !!!</p>
+            <a href="#about" class="btn">Know More About Me</a>
+        </div>
+ 
+    </section>
+    <!-- About -->
+    <section class="about" id="about">
+        <div class="heading">
+            <h2>About Me</h2>
+            <span>Introduction</span>
+        </div>
+        <!-- About Content -->
+        <div class="about-container">
+            <div class="about-img">
+                <img src="https://www.nicepng.com/png/detail/101-1014756_artist-supplies-cartoon-artist-painter-transparent.png" alt="">
+            </div>
+            <div class="about-text">
+                <p>I am always passionate to learn something new. Looking for the opportunity that can help me improve my skills. Open minded person who believes in the value of Art.</p>
+                <div class="information">
+                    <!-- Box 1 -->
+                    <div class="info-box">
+                        <i class='bx bxs-user' ></i>
+                        <span>Ojashri Thakur</span>
+                    </div>
+                    <!-- Box 2 -->
+                    <div class="info-box">
+                        <i class='bx bxs-phone' ></i>
+                        <span>+91 7865238944</span>
+                    </div>
+                    <!-- Box 3 -->
+                    <div class="info-box">
+                        <i class='bx bxs-envelope' ></i>
+                        <span>ojashri.thakur@cumminscollege.in</span>
+                    </div>
+                
+        </div>
+    </section>
+    <!-- Skills -->
+    <section class="skills" id="skills">
+        <div class="heading">
+            <h2>My Life</h2>
+            <span>My Skills</span>
+        </div>
+        <!-- Skills Content -->
+        <div class="skills-container">
+            <div class="bars">
+                <!-- Box 1 -->
+                <div class="bars-box">
+                    <h3>Mandala Painting</h3>
+                    <span>94%</span>
+                    <div class="light-bar"></div>
+                    <div class="percent-bar html-bar"></div>
+                </div>
+                <!-- Box 2 -->
+                <div class="bars-box">
+                    <h3>Acrylics</h3>
+                    <span>84%</span>
+                    <div class="light-bar"></div>
+                    <div class="percent-bar css-bar"></div>
+                </div>
+                <!-- Box 3 -->
+                <div class="bars-box">
+                    <h3>Sketches</h3>
+                    <span>74%</span>
+                    <div class="light-bar"></div>
+                    <div class="percent-bar js-bar"></div>
+                </div>
+                <!-- Box 4 -->
+                <div class="bars-box">
+                    <h3>Oil Pastels</h3>
+                    <span>80%</span>
+                    <div class="light-bar"></div>
+                    <div class="percent-bar react-bar"></div>
+                </div>
+            </div>
+            <div class="skills-img">
+                <img src="https://i.pinimg.com/564x/9d/9a/90/9d9a90f2763d17ee75d6265ef475525b.jpg" alt="">
+            </div>
+        </div>
+ 
+    </section>
+    
+    <!-- projects -->
+    <section class="projects" id="projects">
+        <div class="heading">
+            <h2></h2>
+            <span>My Posts</span>
+        </div>
+        <div class="projects-content">
+            <!-- Box 1 -->
+            <div class="projects-box">
+                <i class='bx bx-brush' ></i>
+                <h3>Post 1</h3>
+                <a href="#">Learn More</a>
+            </div>
+            <!-- Box 2 -->
+            <div class="projects-box">
+                <i class='bx bx-brush' ></i>
+                <h3>Post 2</h3>
+                <a href="#">Learn More</a>
+            </div>
+            <!-- Box 3 -->
+            <div class="projects-box">
+                <i class='bx bx-brush' ></i>
+                <h3>Post 3</h3>
+                <a href="#">Learn More</a>
+            </div>
+
+            <div class="projects-box">
+                <i class='bx bx-brush' ></i>
+                <h3>Post 4</h3>
+                <a href="#">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+   
+    <!-- Footer -->
+    <div class="footer">
+        <h2>Draw Happiness</h2>
+        <div class="footer-social">
+            <a href="#"><i class='bx bxl-facebook' ></i></a>
+            <a href="#"><i class='bx bxl-twitter' ></i></a>
+            <a href="#"><i class='bx bxl-instagram' ></i></a>
+            <a href="#"><i class='bx bxl-youtube' ></i></a>
+        </div>
+ 
+    </div>
+    <!-- Copyright -->
+    <div class="copyright">
+        <p>Create By <a href="">Ojashri Thakur</a> @2023 | All Right Reserved.</p>
+    </div>
+ 
+ 
+ 
+    <!-- Link To JS -->
+    <script src="./js/script.js"></script>
+</body>
+</html>
